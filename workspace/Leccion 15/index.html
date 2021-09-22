@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Small Notification</title>
+
+    <!-- Importacion del jQuery -->
+    <script src="js/lib/jquery-2.1.4.min.js"></script>
+
+    <script src="js/lib/TweenMax.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <!-- Importacion del Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome/css/all.min.css"
+    />
+    <script src="js/smallbox.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+    	<h1>Small: <small>Notification</small></h1>
+    	<hr />
+    </div>
+
+
+
+	
+    <script>
+      $(document).ready(function () {
+		$.smallBox({
+			titulo:    "Título",
+            subtitulo:  "Subtítulo",
+            contenido: "Contenido",
+            img: "https://pbs.twimg.com/profile_images/738825631857795072/Ir2J_Qbi.jpg"
+		});
+	});
+    </script>
+  </body>
+</html>

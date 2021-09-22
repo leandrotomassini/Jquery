@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Big Box</title>
+
+    <!-- Importacion del jQuery -->
+    <script src="js/lib/jquery-2.1.4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <!-- Importacion del Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>
+ <small>Notification</small></h1>
+      <hr />
+	  <button class="btn btn-primary">Mostrar BigBox</button>
+    </div>
+
+    <script src="js/bigBox.js"></script>
+
+    <script>
+	  $("button").on("click", function(){
+		  $.bigBox({
+			  fa: "far fa-thumbs-up",
+			  titulo: "Desde botón",
+			  contenido: "Este es el contenido del Big-Box.",
+			  boton: "Entrar al sistema"
+		  }, function(boton){
+			  console.log(boton);
+			  
+		  });
+	  });
+    </script>
+  </body>
+</html>

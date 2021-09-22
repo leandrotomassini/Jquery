@@ -1,0 +1,15 @@
+.cajaRoja{
+
+	position: relative;
+	width: 100px;
+	height: 100px;
+
+	background-color: red;
+	position: absolute;
+	z-index: 0;
+}
+
+#botTamano{
+	position: absolute;
+	z-index: 1;
+}

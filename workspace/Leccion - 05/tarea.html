@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Lección 05 - On y Bind</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	
+	
+	<div class="container">
+		
+		<h1>Tabla del 3</h1>
+		<hr>
+		<button class="btn btn-primary">Agregar línea</button>
+		<br><br>
+
+		<table class="table table-striped">
+			<tr>
+				<th>Base</td>
+				<th>X</td>
+				<th>Número</td>
+				<th>=</td>
+				<th>Resultado</td>
+			</tr>
+			
+		</table>
+		
+	
+</div>
+
+<script>
+	(function(){
+
+		$(".btn btn-primary").on("click",function(){
+			var fila = `
+			<tr>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+				<td>.</td>
+			</tr>`;
+			$(".table table-striped").append(fila)
+		});
+
+	})();
+</script>
+
+</body>
+</html>
